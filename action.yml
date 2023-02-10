@@ -47,7 +47,7 @@ runs:
       with:
         username: ${{ inputs.dockerhub_username }}
         password: ${{ inputs.dockerhub_token }}
-        repository: ${{ inputs.image }
+        repository: ${{ inputs.image }}
         short-description: ${{ github.event.repository.description }}
     - name: Build and push image
       if: steps.semantic-release.outputs.new_release_published == 'true'
@@ -55,5 +55,5 @@ runs:
       with:
         context: .
         push: true
-        tags: ${{ inputs.image }:latest, ${{ inputs.image }:${{ steps.semantic-release.outputs.new_release_version }}
+        tags: ${{ inputs.image }}:latest, ${{ inputs.image }}:${{ steps.semantic-release.outputs.new_release_version }}
 
