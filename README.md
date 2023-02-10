@@ -29,5 +29,7 @@ jobs:
         uses: timo-reymann/docker-semantic-release-gh-action@v1
         with:
           image: user/imagename
+          dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
+          dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 ```
 
