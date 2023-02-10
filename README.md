@@ -24,9 +24,10 @@ permissions:
   contents: write
 jobs:
   main:
-    runs-on: ubuntu-latest
-    uses: timo-reymann/docker-semantic-release-gh-action@v1
-    with:
-      image: user/imagename
+    steps:
+      - runs-on: ubuntu-latest
+        uses: timo-reymann/docker-semantic-release-gh-action@v1
+        with:
+          image: user/imagename
 ```
 
