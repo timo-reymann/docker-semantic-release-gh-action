@@ -1,5 +1,6 @@
 dockerhub-semantic-release-gh-action
 ===
+[![LICENSE](https://img.shields.io/github/license/timo-reymann/dockerhub-semantic-release-gh-action)](https://github.com/timo-reymann/dockerhub-semantic-release-gh-action/blob/main/LICENSE)
 
 Utilize semantic-release and publish images to docker hub automatically
 
