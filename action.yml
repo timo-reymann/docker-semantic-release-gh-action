@@ -25,6 +25,7 @@ inputs:
   platforms:
     description: List of target platforms for build (as specified by docker/build-push-action)
     required: false
+    default: null
 
 runs:
   using: composite
