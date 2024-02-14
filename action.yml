@@ -22,6 +22,10 @@ inputs:
     description: Github token to use
     required: true
     default: null
+  platforms:
+    description: List of target platforms for build (as specified by docker/build-push-action)
+    required: false
+    default: null
 
 runs:
   using: composite
@@ -61,6 +65,7 @@ runs:
       uses: docker/build-push-action@v2
       with:
         context: .
+        platforms: ${{ inputs.platforms }}
         push: true
         tags: ${{ inputs.image }}:latest, ${{ inputs.image }}:${{ steps.semantic-release.outputs.new_release_version }}
 
