@@ -30,7 +30,7 @@ jobs:
   main:
     steps:
       - runs-on: ubuntu-latest
-        uses: timo-reymann/docker-semantic-release-gh-action@v1
+        uses: timo-reymann/docker-semantic-release-gh-action@v2
         with:
           image: user/imagename
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
